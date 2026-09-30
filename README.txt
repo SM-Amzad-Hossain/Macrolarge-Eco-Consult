@@ -1,18 +1,18 @@
 MACROLARGE ECO CONSULT — HTML / CSS / JAVASCRIPT VERSION
 ======================================================
 
-চালানোর নিয়ম
--------------
-1. ZIP ফাইলটি Extract করুন।
-2. ecoconsult-html ফোল্ডারের index.html ফাইলটি ব্রাউজারে খুলুন।
-3. React, npm বা build command লাগবে না।
-4. HTML ফাইল ও assets ফোল্ডার একসঙ্গে রাখবেন। শুধু index.html কপি করলে CSS, JS, ছবি ও font লোড হবে না।
+How to run
+----------
+1. Extract the ZIP file.
+2. Open the index.html file in the ecoconsult-html folder in your browser.
+3. No React, npm, or build command is required.
+4. Keep the HTML files and the assets folder together. If you copy only index.html, the CSS, JS, images and fonts will not load.
 
 Current theme: Reference-inspired Deep Navy (#0B1720), Gold (#C7A45A), White and Light Grey (#F4F5F5).
 Typography: Inter. Dark photographic hero and footer, gold pill buttons.
 
-ফাইলগুলো
---------
+Files
+-----
 index.html                  Homepage
 about.html                  About page
 services.html               Services, pricing, retainers and workshops
@@ -26,21 +26,21 @@ assets/images/              Website photographs
 assets/fonts/               Local fonts and licences
 assets/favicon.svg          Website icon
 
-কীভাবে Edit করবেন
------------------
-- Page content: সংশ্লিষ্ট .html ফাইল edit করুন।
+How to edit
+-----------
+- Page content: edit the relevant .html file.
 - Colours, spacing, layout, responsive design: assets/css/style.css
-- Four service stages and their prices: assets/js/main.js-এর stages array
+- Four service stages and their prices: assets/js/main.js stages array
 - Initial Measure pricing is also in services.html for the initial HTML view; keep both in sync when changing Measure prices.
 - Retainer and training prices: services.html
 - FAQs: faqs.html
 - Homepage FAQ excerpts: index.html
 - Services FAQ excerpts: services.html
-- Header/footer সব HTML ফাইলে আছে; পরিবর্তন করলে সব পেজে update করুন।
+- Header/footer content exists across all HTML files; update all pages when making changes.
 - Contact service dropdown options: contact.html
 
-যেসব Features কাজ করে
-----------------------
+Features that work
+------------------
 - Desktop, tablet and mobile layout
 - Mobile menu with keyboard Escape support
 - Four pricing tabs with shareable query strings
@@ -52,13 +52,13 @@ assets/favicon.svg          Website icon
 
 IMPORTANT — CONTACT FORM
 ------------------------
-এটি pure static HTML/CSS/JS version। এখানে backend নেই।
-Form পূরণ করে “Prepare email enquiry” চাপলে আপনার email application-এ draft খুলবে।
-Email application-এ নিজে Send চাপতে হবে। Website কোনো email পাঠায় না এবং form data save করে না।
-Email app না খুললে prepared message কপি করে info@ecoconsult.com-এ পাঠাতে পারবেন।
+This is a pure static HTML/CSS/JS version. There is no backend.
+After completing the form, selecting “Prepare email enquiry” opens a draft in your email application.
+You must click Send in the email application yourself. The website does not send emails and does not save form data.
+If the email app does not open, copy the prepared message and send it to info@ecoconsult.com.
 
-সরাসরি website থেকে email পাঠানোর জন্য পরে PHP/Node backend বা একটি approved form service connect করতে হবে।
-কখনো frontend JavaScript-এ email API key, SMTP password বা অন্য secret রাখবেন না।
+To send emails directly from the website later, connect a PHP/Node backend or an approved form service.
+Never place an email API key, SMTP password, or other secret in frontend JavaScript.
 
 Hosting / cPanel
 ----------------
@@ -94,7 +94,6 @@ Checks completed
 All seven pages were checked at 1440, 390 and 320 px widths, both over HTTP and by opening files locally.
 Tested pricing tabs, contact service preselection, email draft generation, FAQ search/expansion and mobile navigation.
 No React runtime, external libraries, CDN resources, npm files or server API are required.
-
 
 SITE-WIDE ANIMATIONS
 --------------------
